@@ -1,0 +1,19 @@
+*.class
+*.iml
+lib
+*.jar
+target
+classes
+*.class
+.settings
+.classpath
+.project
+bin
+.idea
+.bak 
+# Package Files #
+*.jar
+*.war
+*.ear
+
+/jdk8Demo/*.iml
