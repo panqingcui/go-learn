@@ -5,15 +5,15 @@ import "os"
 import "time"
 
 func main() {
-	var s,sep string
+	var s, sep string
 	//var three int
-	for i:=0;i<len(os.Args);i++{
-		s+=sep+os.Args[i]
-		sep=""
-	//	three:=0;
+	for i := 0; i < len(os.Args); i++ {
+		s += sep + os.Args[i]
+		sep = ""
+		//	three:=0;
 	}
 	fmt.Printf(s)
-	for i:=0;i<100;i++{
+	for i := 0; i < 100; i++ {
 
 	}
 	//var num int
@@ -29,12 +29,13 @@ func main() {
 	//
 	//}
 	start := time.Now() // get current time
-	sum:=0;
-	for  i:=0;i<10000000;i++ {
-		sum+=i;
+	sum := 0
+	for i := 0; i < 10000000; i++ {
+		sum += i
 	}
-	consuming:=time.Since(start)
-	fmt.Printf("\n耗时：%d \n",consuming.Nanoseconds())
-	fmt.Printf("sum:%d",sum)
+
+	consuming := time.Since(start)
+	fmt.Printf("\n耗时：%d \n", consuming.Nanoseconds())
+	fmt.Printf("sum:%d", sum)
 
 }
