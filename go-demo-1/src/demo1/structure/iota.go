@@ -4,7 +4,7 @@ import "fmt"
 
 const (
 	a = iota
-	b
+	b = 1 << iota
 	c
 	d
 )
