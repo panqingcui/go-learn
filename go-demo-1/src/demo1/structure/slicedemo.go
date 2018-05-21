@@ -25,6 +25,17 @@ func main() {
 	manage.age = 29
 	manage.title = "CTO"
 	fmt.Println(manage)
+	//-----------------------map --------------在go 中属于语言支持
+	ages := make(map[string]int)
+	ages["xiaoling"] = 30
+	ages["夏利"] = 20
+	fmt.Println(ages)
+	//-----------循环遍历-------------
+	for name, age := range ages {
+		fmt.Println("使用range 遍历：name ", name, "age", age)
+	}
+
+	fmt.Println("直接取map中的值: ages[xiaoling]", ages["xiaoling"])
 
 }
 
