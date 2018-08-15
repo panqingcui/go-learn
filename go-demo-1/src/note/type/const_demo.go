@@ -1,19 +1,19 @@
 package main
 
 import (
-	"unsafe"
 	"fmt"
+	"unsafe"
 )
 
 /**
-   常量
- */
+  常量
+*/
 func main() {
 	//const x , y int =123,0x22
 	const s = "hello, world"
 	const c = '我'
 	const (
-		i, f =1,0.123 //int ,float64(默认)
+		i, f = 1, 0.123 //int ,float64(默认)
 	//	b = false
 
 	)
@@ -26,17 +26,17 @@ func main() {
 	//println(b)
 	println(f)
 	const (
-		x,y int = 99,99
-		b byte =byte(x) // x 被指定为 int 类型，须显示转换为byte类型
-		n = uint8(y)
+		x, y int  = 99, 99
+		b    byte = byte(x) // x 被指定为 int 类型，须显示转换为byte类型
+		n         = uint8(y)
 		// 常量值也可以是某些编译器能计算出结果的表达式
-		prtSize = unsafe.Sizeof(uintptr(1))
-		strSize = len("hello,world")
-		ab uint16 =120
-		ac   //与上一行 ab 类型相同
-		as = "abc"
+		prtSize        = unsafe.Sizeof(uintptr(1))
+		strSize        = len("hello,world")
+		ab      uint16 = 120
+		ac             //与上一行 ab 类型相同
+		as      = "abc"
 	)
-	fmt.Printf("%T,%v \n",ac,ac)
+	fmt.Printf("%T,%v \n", ac, ac)
 	println(prtSize)
 	println(strSize)
 
@@ -52,7 +52,7 @@ func main() {
 	const (
 		_ = iota //0
 		//左移 1 * （2 的10次方）
-		KB = 1<< (10*iota)
+		KB = 1 << (10 * iota)
 		MB
 		GB
 	)
@@ -76,9 +76,9 @@ func main() {
 	println(bf)
 
 	const (
-		ca = iota // int
-		cb float32 =iota
-		cc = iota
+		ca         = iota // int
+		cb float32 = iota
+		cc         = iota
 	)
 	println(ca)
 	println(cb)
@@ -91,10 +91,11 @@ func main() {
 	//______-------------------------------展开
 
 }
-func test(c color)  {
+func test(c color) {
 	println(c)
 
 }
+
 type color byte //自定义类型
 const (
 	black color = iota //指定常量类型

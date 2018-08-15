@@ -11,4 +11,5 @@ func main() {
 	fmt.Println(i1)
 	i2 := 1
 	fmt.Println(i2)
+	fmt.Print(i2)
 }
