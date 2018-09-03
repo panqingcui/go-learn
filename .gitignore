@@ -11,9 +11,18 @@ classes
 bin
 .idea
 .bak 
+src
+githup.com
+pkg
 # Package Files #
 *.jar
 *.war
 *.ear
+*.exe
+*.bak
 
 /jdk8Demo/*.iml
+/pkg
+/src/github.com
+/go-demo-1/pkg
+/*.bak
