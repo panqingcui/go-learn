@@ -21,4 +21,10 @@ func main() {
 	for i, data := range c {
 		fmt.Printf("指定元素----->c[%d]  = %d \n", i, data)
 	}
+	d := [5]int{1, 2, 3, 4, 5}
+	e := [5]int{1, 2, 3, 4, 5}
+	fmt.Println("d==e", d == e)
+	var f [5]int
+	f = d
+	fmt.Println("f=", f)
 }
