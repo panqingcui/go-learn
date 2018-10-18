@@ -22,6 +22,8 @@ func main() {
 	}
 	fmt.Println("当前月中的第几日 ", time.Now().Day())
 	fmt.Println("当前年中的第几日 ", time.Now().YearDay())
+	year,week := time.Now().ISOWeek()
+	fmt.Println("当前第几周",year,week)
 	fmt.Println("一周中的周几 ", time.Now().Weekday())
 	seconds := 10
 	fmt.Println("时间段 10s ", time.Duration(seconds)*time.Second)

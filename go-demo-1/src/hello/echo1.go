@@ -37,5 +37,6 @@ func main() {
 	consuming := time.Since(start)
 	fmt.Printf("\n耗时：%d \n", consuming.Nanoseconds())
 	fmt.Printf("sum:%d", sum)
+	fmt.Printf("sum:%d", time.Now().UnixNano()/1e6)
 
 }
