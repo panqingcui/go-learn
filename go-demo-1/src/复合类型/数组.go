@@ -2,6 +2,17 @@ package main
 
 import "fmt"
 
+/**
+go 中对象属于值传递，自动复制一份数据
+*/
+func modify(d [5]int) {
+	d[0] = 1234
+	fmt.Printf("modify a %v \n", d)
+}
+func modifyF(p *[5]int) {
+	(*p)[0] = 1234
+	fmt.Printf("modify *p %v \n", *p)
+}
 func main() {
 	var a [10]int
 	//var b [5] int
@@ -27,4 +38,8 @@ func main() {
 	var f [5]int
 	f = d
 	fmt.Println("f=", f)
+	modify(d)
+	fmt.Println("d=", d)
+	modifyF(&e)
+	fmt.Println("e=", e)
 }
